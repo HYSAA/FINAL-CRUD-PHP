@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Log-In</title>
+    <title>Log-In!</title>
 
     <?php require 'config.php'; ?>
 </head>
