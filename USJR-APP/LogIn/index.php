@@ -3,13 +3,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Login and Register using PDO PHP Mysql</title>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 </head>
 <body>
 <div class="container">
-    <h1 class="text-center" style="margin-top:30px;">Login and Register using PDO PHP Mysql</h1>
+    <h1 class="text-center" style="margin-top:30px;">Student Registration</h1>
     <hr>
     <div class="row justify-content-md-center">
         <div class="col-md-5">

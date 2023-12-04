@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="text-center" style="margin-top:30px;">Login and Register using PDO PHP Mysql</h1>
+    <h1 class="text-center" style="margin-top:30px;">Student Registration</h1>
     <hr>
     <div class="row justify-content-md-center">
         <div class="col-md-5">

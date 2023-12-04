@@ -50,12 +50,12 @@ if (isset($_POST["submit"])) {
 
 <body>
    <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: #00ff5573;">
-      PHP Complete CRUD Application
+      Student Registration
    </nav>
 
    <div class="container">
       <div class="text-center mb-4">
-         <h3>Add New User</h3>
+         <h3>Add New Student</h3>
          <p class="text-muted">Complete the form below to add a new user</p>
       </div>
 
