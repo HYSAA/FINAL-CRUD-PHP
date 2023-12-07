@@ -21,7 +21,7 @@
                         </div>
                     ";
   
-                    //unset error
+                 
                     unset($_SESSION['error']);
                 }
   
@@ -32,7 +32,7 @@
                         </div>
                     ";
   
-                    //unset success
+                  
                     unset($_SESSION['success']);
                 }
             ?>
@@ -61,3 +61,4 @@
     </div>
 </body>
 </html>
+
