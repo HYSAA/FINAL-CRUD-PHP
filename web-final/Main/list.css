@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3498db; /* Updated color */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d; /* Updated color */
+    color: white;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+#table-listing {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#table-listing th, #table-listing td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#table-listing th {
+    background-color: #3498db; /* Updated color */
+    color: white;
+}
+
+#table-listing tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#table-listing tbody tr:hover {
+    background-color: #e1e1e1;
+}
+
+.form-btns {
+    margin-top: 20px;
+}
+
+.form-btns button {
+    margin: 5px;
+}
+
+.edit-btn,
+.del-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #2ecc71; /* Updated color */
+    color: white;
+}
+
+.del-btn {
+    background-color: #e74c3c; /* Updated color */
+    color: white;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container .button {
+    margin: 5px;
+}
+
+.btn-red {
+    background-color: #f44336;
+    color: white;
+}
+
+#table-listing {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

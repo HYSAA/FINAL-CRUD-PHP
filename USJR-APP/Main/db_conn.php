@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "admin123";
-$dbname = "usjr3"; // Change the database name here
+$dbname = "usjr4"; // Change the database name here
 
 try {
     $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

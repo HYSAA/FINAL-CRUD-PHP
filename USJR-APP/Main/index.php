@@ -42,8 +42,13 @@ include "db_conn.php";
           <th scope="col">ID</th>
           <th scope="col">First Name</th>
           <th scope="col">Last Name</th>
+          <th scope="col">Middle Name</th>
           <th scope="col">Email</th>
           <th scope="col">Gender</th>
+          <th scope="col">Student ID</th>
+          <th scope="col">Year</th>
+          <th scope="col">Program</th>
+          <th scope="col">College</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
@@ -59,8 +64,13 @@ include "db_conn.php";
               <td><?php echo $row["id"] ?></td>
               <td><?php echo $row["first_name"] ?></td>
               <td><?php echo $row["last_name"] ?></td>
+              <td><?php echo $row["middle_name"] ?></td>
               <td><?php echo $row["email"] ?></td>
               <td><?php echo $row["gender"] ?></td>
+              <td><?php echo $row["stud_id"] ?></td>
+              <td><?php echo $row["year"] ?></td>
+              <td><?php echo $row["program"] ?></td>
+              <td><?php echo $row["college"] ?></td>
               <td>
                 <a href="edit.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
                 <a href="delete.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>

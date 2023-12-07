@@ -1,17 +1,16 @@
 <?php
 include "db_conn.php";
+
 $id = isset($_GET["id"]) ? $_GET["id"] : null;
 
 if (isset($_POST["submit"])) {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
-    $email = $_POST['email'];
-    $gender = $_POST['gender'];
 
     try {
-        $sql = "UPDATE `crud` SET `first_name`=?, `last_name`=?, `email`=?, `gender`=? WHERE id = ?";
+        $sql = "UPDATE `students` SET `studfirstname`=?, `studlastname`=? WHERE studid = ?";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute([$first_name, $last_name, $email, $gender, $id]);
+        $stmt->execute([$first_name, $last_name, $id]);
         header("Location: index.php?msg=Data updated successfully");
     } catch (PDOException $e) {
         echo "Failed: " . $e->getMessage();
@@ -19,7 +18,7 @@ if (isset($_POST["submit"])) {
 }
 
 try {
-    $sql = "SELECT * FROM `crud` WHERE id = ?";
+    $sql = "SELECT * FROM `students` WHERE studid = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$id]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
