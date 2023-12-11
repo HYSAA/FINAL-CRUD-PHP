@@ -47,7 +47,7 @@ $colleges = $prepColleges->fetchAll(PDO::FETCH_ASSOC);
                 <th><label for="college">College</label></th>
                 <td>
                     <select name="college" id="college">
-                        <option>----------- Select College -----------</option>
+                        <option>College Choices</option>
                         <?php foreach ($colleges as $college) : ?>
                             <option value="<?= $college['collId'] ?>">
                                 <?= $college['collshortname'] ?> - <?= $college['collfullname'] ?>
@@ -60,7 +60,7 @@ $colleges = $prepColleges->fetchAll(PDO::FETCH_ASSOC);
                 <th><label for="program">Program</label></th>
                 <td>
                     <select name="program" id="program">
-                        <option value="">---------- Select Program ----------</option>
+                        <option value="">Program Choices</option>
                     </select>
                 </td>
             </tr>
@@ -71,7 +71,7 @@ $colleges = $prepColleges->fetchAll(PDO::FETCH_ASSOC);
             <tr>
                 <td colspan="2">
                     <button type="submit" class="button btn-primary">Save</button>
-                    <button type="button" onclick="window.location.href='listStudents.php'" class="button btn-primary">View Student List</button>
+                    <button type="button" onclick="window.location.href='listStudents.php'" class="button btn-primary">Student List</button>
                 </td>
             </tr>
         </table>

@@ -29,15 +29,14 @@ if (isset($_POST['login'])) {
 
                 $_SESSION['authenticated'] = true;
 
-                // Redirect to the dashboard
                 header('Location: ../Main/regStudent.php');
-                exit(); // Make sure to exit after redirect
+                exit(); 
             } else {
-                // Return the values to the user
+             
                 $_SESSION['error'] = 'Incorrect password';
             }
         } else {
-            // Return the values to the user
+         
             $_SESSION['error'] = 'No account associated with the email';
         }
     } catch (PDOException $e) {

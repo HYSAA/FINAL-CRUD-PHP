@@ -31,7 +31,7 @@
             <table id="table-entry">
                 <tr>
                     <th colspan="2">
-                        <span>Edit Student Information Data Entry</span>
+                        <span>Edit Information </span>
                     </th>
                 </tr>
                 <tr>
@@ -54,7 +54,7 @@
                     <th><label for="college">College</label></th>
                     <td>
                         <select name="college" id="college">
-                            <option disabled>----------- Select College -----------</option>
+                            <option disabled>Select College</option>
                             <?php
                                 $queryColleges = "SELECT collId, collshortname, collfullname FROM colleges";
                                 $prep = $conn->prepare($queryColleges);

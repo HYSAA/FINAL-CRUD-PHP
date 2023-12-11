@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* Light gray background */
     margin: 0;
     padding: 0;
 }
@@ -10,27 +10,24 @@ body {
     margin: 20px auto;
 }
 
-.button {
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container .button {
     margin: 5px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.btn-primary {
-    background-color: #3498db; /* Updated color */
+.btn-red {
+    background-color: #4caf50; /* Red color */
     color: white;
-}
-
-.btn-secondary {
-    background-color: #7f8c8d; /* Updated color */
-    color: white;
-}
-
-.table-container {
-    margin-top: 20px;
 }
 
 #table-listing {
@@ -40,68 +37,54 @@ body {
 }
 
 #table-listing th, #table-listing td {
-    padding: 12px;
-    border: 1px solid #ddd;
+    padding: 16px;
+    border: 1px solid #dee2e6; /* Light gray border */
     text-align: left;
 }
 
 #table-listing th {
-    background-color: #3498db; /* Updated color */
+    background-color: #d4276f; /* Blue color */
     color: white;
 }
 
 #table-listing tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f1f3f5; /* Lighter gray background */
 }
 
 #table-listing tbody tr:hover {
-    background-color: #e1e1e1;
-}
-
-.form-btns {
-    margin-top: 20px;
-}
-
-.form-btns button {
-    margin: 5px;
+    background-color: #e9ecef; /* Slightly darker gray on hover */
 }
 
 .edit-btn,
 .del-btn {
-    padding: 8px 12px;
+    padding: 10px 16px;
     font-size: 14px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .edit-btn {
-    background-color: #2ecc71; /* Updated color */
+    background-color: #28a745; /* Green color */
     color: white;
 }
 
 .del-btn {
-    background-color: #e74c3c; /* Updated color */
+    background-color: #dc3545; /* Red color */
     color: white;
 }
-.button-container {
+
+/* Updated styles for fixed buttons at the bottom */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    margin-top: 20px;
+    display: flex;
 }
 
-.button-container .button {
-    margin: 5px;
-}
-
-.btn-red {
-    background-color: #f44336;
-    color: white;
-}
-
-#table-listing {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.fixed-buttons .button {
+    margin: 0 10px;
 }

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 departmentSelect.innerHTML = departments;
                 departmentSelect.disabled = false;
 
-                // Set Program ID to start with selected college ID + "000"
+           
                 progId.value = collegeId + "000";
             } else {
                 console.error('There was a problem with the request.');

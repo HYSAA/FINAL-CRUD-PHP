@@ -10,7 +10,7 @@
 
 <body>
 
-    <div class="button-container">
+<div class="fixed-buttons button-container">
         <button onclick="location.href='regStudent.php'" class="button btn-red">Register New Student</button>
         <button onclick="location.href='listColleges.php'" class="button btn-red">View Colleges</button>
         <button onclick="location.href='listPrograms.php'" class="button btn-red">View Programs</button>

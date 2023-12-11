@@ -1,6 +1,7 @@
 <?php
 require_once "db.php";
 
+
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     echo "Form data not received";
     header("Location: editStudent.php");
@@ -30,16 +31,18 @@ $query = "UPDATE students SET
             studcollid = :college, 
             studprogid = :program, 
             studyear = :year
-          WHERE studid = :student_id";
+          WHERE studid = :old_student_id";
 
 $prep = $conn->prepare($query);
 $prep->bindParam(':student_id', $studentID);
+$prep->bindParam(':old_student_id', $studentID);  // Add this line
 $prep->bindParam(':fname', $firstName);
 $prep->bindParam(':mname', $middleName);
 $prep->bindParam(':lname', $lastName);
 $prep->bindParam(':college', $collegeID);
 $prep->bindParam(':program', $programID);
 $prep->bindParam(':year', $year);
+
 
 if ($prep->execute()) {
     echo "Student information updated successfully";
